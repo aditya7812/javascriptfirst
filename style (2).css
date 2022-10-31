@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  
+  
+  place-items: center;
+  overflow: hidden;
+}
+
+.parent:nth-child(1) > .child .flag, .parent:nth-child(1) > .child .countryname, .parent:nth-child(1) > .child .runs, .parent:nth-child(1) > .child .name, .parent:nth-child(1) > .child .player {
+  opacity: 0%;
+  animation: startUp 2s forwards;
+}
+.parent:nth-child(2) > .child .flag, .parent:nth-child(2) > .child .countryname, .parent:nth-child(2) > .child .runs, .parent:nth-child(2) > .child .name, .parent:nth-child(2) > .child .player {
+  opacity: 0%;
+  animation: startDown 2s forwards;
+  animation-delay: 2s;
+}
+.parent:nth-child(3) > .child .flag, .parent:nth-child(3) > .child .countryname, .parent:nth-child(3) > .child .runs, .parent:nth-child(3) > .child .name, .parent:nth-child(3) > .child .player {
+  opacity: 0%;
+  animation: startUp 2s forwards;
+  animation-delay: 4s;
+}
+.parent:nth-child(4) > .child .flag, .parent:nth-child(4) > .child .countryname, .parent:nth-child(4) > .child .runs, .parent:nth-child(4) > .child .name, .parent:nth-child(4) > .child .player {
+  opacity: 0%;
+  animation: startDown 2s forwards;
+  animation-delay: 6s;
+}
+
+
+.parent:nth-last-child(4) > .child .flag, .parent:nth-last-child(4) > .child .countryname, .parent:nth-last-child(4) > .child .runs, .parent:nth-last-child(4) > .child .name, .parent:nth-last-child(4) > .child .player {
+  opacity: 0%;
+  animation: startUp 3s forwards;
+  animation-delay: 13s;
+}
+.parent:nth-last-child(3) > .child .flag, .parent:nth-last-child(3) > .child .countryname, .parent:nth-last-child(3) > .child .runs, .parent:nth-last-child(3) > .child .name, .parent:nth-last-child(3) > .child .player {
+  opacity: 0%;
+  animation: startDown 3s forwards;
+  animation-delay: 16s;
+}
+.parent:nth-last-child(2) > .child .flag, .parent:nth-last-child(2) > .child .countryname, .parent:nth-last-child(2) > .child .runs, .parent:nth-last-child(2) > .child .name, .parent:nth-last-child(2) > .child .player {
+  opacity: 0%;
+  animation: startUp 3s forwards;
+  animation-delay: 19s;
+}
+.parent:nth-last-child(1) > .child .flag, .parent:nth-last-child(1) > .child .countryname, .parent:nth-last-child(1) > .child .runs, .parent:nth-last-child(1) > .child .name, .parent:nth-last-child(1) > .child .player {
+  opacity: 0%;
+  animation: startDown 3s forwards;
+  animation-delay: 22s;
+}
+
+
+@keyframes startUp {
+  0% {
+    opacity: 0%;
+    transform: translateY(30vh);
+  }
+  100% {
+    opacity: 100%;
+    transform: translate(0);
+  }
+}
+
+@keyframes startDown {
+  0% {
+    opacity: 0%;
+    transform: translateY(-300vh);
+  }
+  100% {
+    opacity: 100%;
+    transform: translate(0);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translateX(calc(-320px * 15));
+  }
+}
+.slide {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  width: calc(320px * 19);
+  animation: scroll 50s forwards; 
+  animation-delay: 12s;
+  
+}
+
+.parent:nth-child(4n+1) > .child {
+  background-color: #d1e293;
+}
+
+.parent:nth-child(4n+2) > .child {
+  background-color: #b2e69d;
+}
+
+.parent:nth-child(4n) > .child {
+  background-color: #96d6d6;
+}
+
+.parent:nth-child(4n+3) > .child {
+  background-color: #deb0e8;
+}
+
+.btn {
+  position: absolute;
+}
+
+img {
+  width: 100%;
+}
+
+.parent {
+  box-sizing: border-box;
+  height: 100vh;
+  width: 25vw; 
+  overflow: hidden;
+}
+
+.child {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  color: blueviolet;
+  background-color: #b2e69d;
+  width: 25vw;
+  height: calc(100vh/3);
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.child1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35vh;
+  width: 25vw;
+  overflow: hidden;
+}
+
+.child2 {
+  height: 17vh;
+}
+
+.child1 img {
+  position:relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.child .runs {
+  font-size: 1.2em;
+  font-weight: 800;
+  color: black;
+  height: 7vh;
+  width: 100%;
+  line-height: 2.77vh;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.child .name {
+  font-size: 1.4em;
+  font-weight: 800;
+  color: black;
+  height: 8.33vh;
+  width: 100%;
+  line-height: 8.33vh;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.child3 {
+  display: flex;
+  height: 47vh;
+}
+
+.child3 .flag {
+  position: relative;
+  object-fit: fill;
+  height: 10.6vh;
+  width: 100%;
+  box-sizing: content-box;
+  border: 3px solid black;
+}
+
+.child3 .country {
+  line-height: 70px;
+  position: relative;
+  height: 70px;
+}
+
+.child3 .flag img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  box-sizing: content-box;
+  padding-bottom: 5px;
+}
+
+.pentagon {
+  box-shadow: 0px 0px 1px 2px black;
+}
+
+.child1 .pentagon {
+  margin: 0px 0px 6.94vh 0px;
+  position: relative;
+  width: 14.06vw;
+  border-width: 4.14vh 5vh 16.66vh;
+  border-style: solid;
+  border-color: #abefcd ;
+}
+
+.pentagon::before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: 16.66vh;
+  left: -5vh;
+  border-width: 8.33vh 20vh 0px;
+  border-style: solid;
+  border-color: #abefcd transparent;
+  filter: drop-shadow(0px 3px 0px black);
+  overflow: hidden;
+}
+
+.box2 {
+  height: 14vh;
+  background-color: rgb(201, 222, 222) !important;
+}
+
+.box3 {
+  overflow: hidden;
+  box-sizing: border-box;
+  height: 50vh;
+  border-bottom: 4px solid white;
+}
+
+.player {
+  width: 33.33vh;
+  height: 48.88vh;
+  box-sizing: border-box;
+  margin: 2px;
+}
+
+.player img {
+  height: 100%;
+  width: 100%;
+}
+
+.child1 .flag {
+  position: absolute;
+  top: 4.86vh;
+  justify-content: center;
+  width: 23.6vh;
+  height: 13.88vh;
+  z-index: 100;
+  border: 2px solid black;
+}
+
+
+
+.child5 {
+  position: relative;
+}
+
+.countryname {
+  color: black;
+  line-height: 6.9vh;
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 600;
+}
+
+.Thanks {
+  top: -50px;
+  left: -200px;
+  z-index: -10;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+
+.Thanks img {
+  height: 100%;
+  height: 100%;
+}
+
+.end {
+  display: flex;
+  height: 720px;
+  text-align: center;
+  font-size: 50px;
+  line-height: 620px;
+}
+
+.refbtn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  z-index: 1000;
+}
+

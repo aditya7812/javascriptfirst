@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  
+  
+  place-items: center;
+  overflow: hidden;
+}
+
+.parent:nth-child(1) > .child .flag, .parent:nth-child(1) > .child .countryname, .parent:nth-child(1) > .child .runs, .parent:nth-child(1) > .child .name, .parent:nth-child(1) > .child .player {
+  opacity: 0%;
+  animation: startUp 2s forwards;
+}
+.parent:nth-child(2) > .child .flag, .parent:nth-child(2) > .child .countryname, .parent:nth-child(2) > .child .runs, .parent:nth-child(2) > .child .name, .parent:nth-child(2) > .child .player {
+  opacity: 0%;
+  animation: startDown 2s forwards;
+  animation-delay: 2s;
+}
+.parent:nth-child(3) > .child .flag, .parent:nth-child(3) > .child .countryname, .parent:nth-child(3) > .child .runs, .parent:nth-child(3) > .child .name, .parent:nth-child(3) > .child .player {
+  opacity: 0%;
+  animation: startUp 2s forwards;
+  animation-delay: 4s;
+}
+.parent:nth-child(4) > .child .flag, .parent:nth-child(4) > .child .countryname, .parent:nth-child(4) > .child .runs, .parent:nth-child(4) > .child .name, .parent:nth-child(4) > .child .player {
+  opacity: 0%;
+  animation: startDown 2s forwards;
+  animation-delay: 6s;
+}
+
+
+.parent:nth-last-child(4) > .child .flag, .parent:nth-last-child(4) > .child .countryname, .parent:nth-last-child(4) > .child .runs, .parent:nth-last-child(4) > .child .name, .parent:nth-last-child(4) > .child .player {
+  opacity: 0%;
+  animation: startUp 3s forwards;
+  animation-delay: 13s;
+}
+.parent:nth-last-child(3) > .child .flag, .parent:nth-last-child(3) > .child .countryname, .parent:nth-last-child(3) > .child .runs, .parent:nth-last-child(3) > .child .name, .parent:nth-last-child(3) > .child .player {
+  opacity: 0%;
+  animation: startDown 3s forwards;
+  animation-delay: 16s;
+}
+.parent:nth-last-child(2) > .child .flag, .parent:nth-last-child(2) > .child .countryname, .parent:nth-last-child(2) > .child .runs, .parent:nth-last-child(2) > .child .name, .parent:nth-last-child(2) > .child .player {
+  opacity: 0%;
+  animation: startUp 3s forwards;
+  animation-delay: 19s;
+}
+.parent:nth-last-child(1) > .child .flag, .parent:nth-last-child(1) > .child .countryname, .parent:nth-last-child(1) > .child .runs, .parent:nth-last-child(1) > .child .name, .parent:nth-last-child(1) > .child .player {
+  opacity: 0%;
+  animation: startDown 3s forwards;
+  animation-delay: 22s;
+}
+
+
+@keyframes startUp {
+  0% {
+    opacity: 0%;
+    transform: translateY(200px);
+  }
+  100% {
+    opacity: 100%;
+    transform: translate(0);
+  }
+}
+
+@keyframes startDown {
+  0% {
+    opacity: 0%;
+    transform: translateY(-200px);
+  }
+  100% {
+    opacity: 100%;
+    transform: translate(0);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translateX(calc(-320px * 15));
+  }
+}
+.slide {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  width: calc(320px * 19);
+  animation: scroll 50s forwards; 
+  animation-delay: 12s;
+  
+}
+
+.parent:nth-child(4n+1) > .child {
+  background-color: #d1e293;
+}
+
+.parent:nth-child(4n+2) > .child {
+  background-color: #b2e69d;
+}
+
+.parent:nth-child(4n) > .child {
+  background-color: #96d6d6;
+}
+
+.parent:nth-child(4n+3) > .child {
+  background-color: #deb0e8;
+}
+
+.btn {
+  position: absolute;
+}
+
+img {
+  width: 100%;
+}
+
+.parent {
+  box-sizing: border-box;
+  height: 720px;
+  width: 320px; 
+  overflow: hidden;
+}
+
+.child {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  color: blueviolet;
+  background-color: #b2e69d;
+  width: 320px;
+  height: 240px;
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.child1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 260px;
+  width: 320px;
+  overflow: hidden;
+}
+
+.child2 {
+  height: 120px;
+}
+
+.child1 img {
+  position:relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  box-sizing: content-box;
+  margin: auto;
+}
+
+.child .runs {
+  font-size: 25px;
+  font-weight: 800;
+  color: black;
+  height: 50px;
+  width: 100%;
+  line-height: 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.child .name {
+  font-size: 30px;
+  font-weight: 800;
+  color: black;
+  height: 60px;
+  width: 100%;
+  line-height: 60px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.child3 {
+  display: flex;
+  height: 340px;
+}
+
+.child3 .flag {
+  position: relative;
+  object-fit: fill;
+  height: 170px;
+  width: 100%;
+  box-sizing: content-box;
+  border: 3px solid black;
+}
+
+.child3 .country {
+  line-height: 70px;
+  position: relative;
+  height: 70px;
+}
+
+.child3 .flag img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  box-sizing: content-box;
+  padding-bottom: 5px;
+}
+
+.pentagon {
+  box-shadow: 0px 0px 1px 2px black;
+}
+
+.child1 .pentagon {
+  margin: 0px 0px 50px 0px;
+  position: relative;
+  width: 180px;
+  border-width: 30px 36px 120px;
+  border-style: solid;
+  border-color: #abefcd ;
+}
+
+.pentagon::before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: 120px;
+  left: -36px;
+  border-width: 60px 126px 0px;
+  border-style: solid;
+  border-color: #abefcd transparent;
+  filter: drop-shadow(0px 3px 0px black);
+  overflow: hidden;
+}
+
+.box2 {
+  height: 100px;
+  background-color: rgb(201, 222, 222) !important;
+}
+
+.box3 {
+  overflow: hidden;
+  box-sizing: border-box;
+  height: 360px;
+  border-bottom: 4px solid white;
+}
+
+.player {
+  width: 240px;
+  height: 352px;
+  box-sizing: border-box;
+  margin: 3px;
+}
+
+.player img {
+  height: 100%;
+  width: 100%;
+}
+
+.child1 .flag {
+  position: absolute;
+  top: 35px;
+  justify-content: center;
+  width: 170px;
+  height: 100px;
+  z-index: 100;
+  border: 2px solid black;
+}
+
+
+
+.child5 {
+  position: relative;
+}
+
+.countryname {
+  color: black;
+  line-height: 50px;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.Thanks {
+  top: -50px;
+  left: -200px;
+  z-index: -10;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+
+.Thanks img {
+  height: 100%;
+  height: 100%;
+}
+
+.end {
+  display: flex;
+  height: 720px;
+  text-align: center;
+  font-size: 50px;
+  line-height: 620px;
+}
+
