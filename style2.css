@@ -17,43 +17,44 @@ body {
 .parent:nth-child(1) > .child .flag, .parent:nth-child(1) > .child .countryname, .parent:nth-child(1) > .child .runs, .parent:nth-child(1) > .child .name, .parent:nth-child(1) > .child .player {
   opacity: 0%;
   animation: startUp 2s forwards;
+  animation-delay: 7s;
 }
 .parent:nth-child(2) > .child .flag, .parent:nth-child(2) > .child .countryname, .parent:nth-child(2) > .child .runs, .parent:nth-child(2) > .child .name, .parent:nth-child(2) > .child .player {
   opacity: 0%;
   animation: startDown 2s forwards;
-  animation-delay: 2s;
+  animation-delay: 9s;
 }
 .parent:nth-child(3) > .child .flag, .parent:nth-child(3) > .child .countryname, .parent:nth-child(3) > .child .runs, .parent:nth-child(3) > .child .name, .parent:nth-child(3) > .child .player {
   opacity: 0%;
   animation: startUp 2s forwards;
-  animation-delay: 4s;
+  animation-delay: 11s;
 }
 .parent:nth-child(4) > .child .flag, .parent:nth-child(4) > .child .countryname, .parent:nth-child(4) > .child .runs, .parent:nth-child(4) > .child .name, .parent:nth-child(4) > .child .player {
   opacity: 0%;
   animation: startDown 2s forwards;
-  animation-delay: 6s;
+  animation-delay: 13s;
 }
 
 
 .parent:nth-last-child(4) > .child .flag, .parent:nth-last-child(4) > .child .countryname, .parent:nth-last-child(4) > .child .runs, .parent:nth-last-child(4) > .child .name, .parent:nth-last-child(4) > .child .player {
   opacity: 0%;
   animation: startUp 3s forwards;
-  animation-delay: 13s;
+  animation-delay: 146s;
 }
 .parent:nth-last-child(3) > .child .flag, .parent:nth-last-child(3) > .child .countryname, .parent:nth-last-child(3) > .child .runs, .parent:nth-last-child(3) > .child .name, .parent:nth-last-child(3) > .child .player {
   opacity: 0%;
   animation: startDown 3s forwards;
-  animation-delay: 16s;
+  animation-delay: 149s;
 }
 .parent:nth-last-child(2) > .child .flag, .parent:nth-last-child(2) > .child .countryname, .parent:nth-last-child(2) > .child .runs, .parent:nth-last-child(2) > .child .name, .parent:nth-last-child(2) > .child .player {
   opacity: 0%;
   animation: startUp 3s forwards;
-  animation-delay: 19s;
+  animation-delay: 152s;
 }
 .parent:nth-last-child(1) > .child .flag, .parent:nth-last-child(1) > .child .countryname, .parent:nth-last-child(1) > .child .runs, .parent:nth-last-child(1) > .child .name, .parent:nth-last-child(1) > .child .player {
   opacity: 0%;
   animation: startDown 3s forwards;
-  animation-delay: 22s;
+  animation-delay: 155s;
 }
 
 
@@ -84,7 +85,7 @@ body {
     transform: translate(0);
   }
   100% {
-    transform: translateX(calc(-320px * 15));
+    transform: translateX(calc(-209px * 46));
   }
 }
 
@@ -97,9 +98,9 @@ body {
 .slide {
   font-family: 'Poppins', sans-serif;
   display: flex;
-  width: calc(320px * 19/4);
-  animation: scroll 60s linear forwards; 
-  animation-delay: 12s;
+  width: calc(209px * 50);
+  animation: scroll 130s linear forwards; 
+  animation-delay: 16s;
   
 }
 
@@ -324,4 +325,20 @@ img {
 .refbtn {
   position: absolute;
   z-index: 1000;
+}
+
+.smallCountry {
+  font-size: 17px;
+}
+
+.bigCountry {
+  font-size: 20px;
+}
+
+.smallName {
+  font-size: 18px !important;
+}
+
+.bigName {
+  font-size: 21px !important;
 }
